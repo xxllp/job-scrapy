@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ebook 之家</title>
+</head>
+<body>
+<input id="searchBox" name="q" type="search" placeholder="输入关键字搜索" class="form-control" value="">
+ <br> 现有图书目录：
+<table border="1">
+{% for book in result %}
+      <tr>
+       <!--{% for column in book %}-->
+        <!--<td>{{ column }}</td>-->
+       <!--{% endfor %}-->
+        <td>{{ book }}</td>
+
+      </tr>
+{% endfor %}
+</table>
+</body>
+</html>
